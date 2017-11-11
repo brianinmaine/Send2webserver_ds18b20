@@ -1,5 +1,5 @@
 <?php
-    $link = mysqli_connect("localhost", "root", "Harm1ess", "arduino");
+    $link = mysqli_connect("localhost", "root", "password", "arduino");
 
     $sql = "INSERT INTO temp (value) VALUES ('".$_GET["value"]."')";    
 
