@@ -2,11 +2,11 @@
 // this program uploads the temperature every 10 minutes to my
 // own Ubuntu webserver running Apache, PHP7 and MySQL.
 //
-const char * ssid = "BT";                // access point
-const char * password = "harmless";      // access point password
-const char * ssid2 = "Trauger";                // second access point
-const char * password2 = "harmless";      // second access point password
-const char * host = "trauger.ddns.net";  // webserver to upload to
+const char * ssid = "AP1";                // access point
+const char * password = "AP1password";      // access point password
+const char * ssid2 = "AP2";                // second access point
+const char * password2 = "AP2password";      // second access point password
+const char * host = "mywebserver.ddns.net";  // webserver to upload to
 const uint16_t port = 80;                // webserver port, usually 80
 int uploadInterval = 10;       // how many minutes between uploads
 
