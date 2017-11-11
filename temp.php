@@ -10,7 +10,7 @@ header("Refresh: 5; URL=$url");  // Refresh the webpage every 5 seconds
     <body><div align="center">
 <?php
  
-    $con=mysqli_connect("localhost","root","Harm1ess","arduino");
+    $con=mysqli_connect("localhost","root","password","arduino");
     $result = mysqli_query($con,'SELECT time,value FROM temp ORDER BY time DESC LIMIT 1');
     $ctemp = mysqli_fetch_array($result);
     $time = strtotime($ctemp['time']);
@@ -30,7 +30,7 @@ header("Refresh: 5; URL=$url");  // Refresh the webpage every 5 seconds
       
 <?php
  
-    $con=mysqli_connect("localhost","root","Harm1ess","arduino");
+    $con=mysqli_connect("localhost","root","password","arduino");
     $result = mysqli_query($con,'SELECT MONTH(time), DAY(time), MAX(value), MIN(value) FROM `temp` GROUP BY MONTH(time) DESC, DAY(time) DESC');
     while($row = mysqli_fetch_array($result))
     {      
